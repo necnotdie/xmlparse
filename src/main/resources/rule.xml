@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleInfos>
+    <import>
+        <class>
+            java.util.UUID;
+        </class>
+    </import>
+    <bean id="空" type="string" value=""/>
+    <bean id="ZDB-UUID" type="function" value="${UUID.randomUUID().toString().replaceAll(-,${空})}"/>
+</RuleInfos>
